@@ -14,29 +14,28 @@ private:
     unsigned int _attackDamage;
 
 public:
-    ClapTrap();                               // default constructor
-    ClapTrap(const std::string &name);        // parameterized constructor
-    ClapTrap(const ClapTrap &other);          // copy constructor
-    ClapTrap &operator=(const ClapTrap &other); // copy assignment operator
-    ~ClapTrap();                              // destructor
+    ClapTrap();                              
+    ClapTrap(const std::string &name); 
+    ClapTrap(const ClapTrap &other);  
+    ClapTrap &operator=(const ClapTrap &other);
+    ~ClapTrap(); 
 
-    void attack(const std::string &target);
+    virtual void attack(const std::string &target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 
-    // Setters
     void setName(const std::string &name);
     void setHitPoints(unsigned int hitPoints);
     void setEnergyPoints(unsigned int energyPoints);
     void setAttackDamage(unsigned int attackDamage);
 
-    // Getters
     const std::string &getName() const;
     unsigned int getHitPoints() const;
     unsigned int getEnergyPoints() const;
     unsigned int getAttackDamage() const;
+    //getClapTrapName()
 };
 
-#endif /* CLAPTRAP_H */
+#endif 
 
 

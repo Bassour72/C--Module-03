@@ -1,6 +1,5 @@
 #include "FragTrap.hpp"
 
-// Default constructor
 FragTrap::FragTrap() : ClapTrap()
 {
     setHitPoints(100);
@@ -10,7 +9,6 @@ FragTrap::FragTrap() : ClapTrap()
     std::cout << "FragTrap " << getName() << " has been created!" << std::endl;
 }
 
-// Parameterized constructor
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
 {
     setHitPoints(100);
@@ -19,23 +17,20 @@ FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
     std::cout << "FragTrap " << getName() << " has been created!" << std::endl;
 }
 
-// Copy constructor
 FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other)
 {
     std::cout << "FragTrap " << getName() << " has been copied!" << std::endl;
 }
 
-// Assignment operator
 FragTrap &FragTrap::operator=(const FragTrap &other)
 {
     if (this != &other)
     {
-        ClapTrap::operator=(other);  // استخدم assignment من ClapTrap
+        ClapTrap::operator=(other);
     }
     return *this;
 }
 
-// Destructor
 FragTrap::~FragTrap()
 {
     std::cout << "FragTrap " << getName() << " has been destroyed!" << std::endl;

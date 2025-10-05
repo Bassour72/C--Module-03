@@ -1,8 +1,8 @@
 #include "DiamondTrap.hpp"
 
-// Default constructor
+
 DiamondTrap::DiamondTrap()
-    : ClapTrap("Default_clap_name"), FragTrap(), ScavTrap(), _name("Default")
+    : ClapTrap("DiamondTrap_clap_name"), FragTrap(), ScavTrap(), _name("Default")
 {
     setHitPoints(FragTrap::getHitPoints());
     setEnergyPoints(ScavTrap::getEnergyPoints());
@@ -10,7 +10,6 @@ DiamondTrap::DiamondTrap()
     std::cout << "DiamondTrap " << _name << " has been created!\n";
 }
 
-// Constructor with name
 DiamondTrap::DiamondTrap(const std::string& name)
     : ClapTrap(name + "_clap_name"), FragTrap(), ScavTrap(), _name(name)
 {
@@ -20,16 +19,13 @@ DiamondTrap::DiamondTrap(const std::string& name)
     std::cout << "DiamondTrap " << _name << " has been created!\n";
 }
 
-// Copy constructor
 DiamondTrap::DiamondTrap(const DiamondTrap& other)
-    : ClapTrap(other), _name(other._name)
+    : ClapTrap(other),FragTrap(other), ScavTrap(other),  _name(other._name)
 {
     setHitPoints(other.getHitPoints());
     setEnergyPoints(other.getEnergyPoints());
     setAttackDamage(other.getAttackDamage());
 }
-
-// Assignment operator
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 {
     if (this != &other)
@@ -40,7 +36,6 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
     return *this;
 }
 
-// Special ability
 void DiamondTrap::whoAmI()
 {
     std::cout << "DiamondTrap name: " << _name
@@ -48,12 +43,14 @@ void DiamondTrap::whoAmI()
               << std::endl;
 }
 
-// Destructor
+
 DiamondTrap::~DiamondTrap()
 {
     std::cout << "DiamondTrap " << _name << " has been destroyed!\n";
 }
 
 // Getter & Setter
-const std::string &DiamondTrap::getName() const { return _name; }
+const std::string &DiamondTrap::getName() const { 
+    std:: cout  << ClapTrap::getName() << std::endl;
+    return _name; }
 void DiamondTrap::setName(const std::string &name) { _name = name; }

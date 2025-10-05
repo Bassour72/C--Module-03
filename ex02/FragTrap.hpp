@@ -7,19 +7,17 @@
 class FragTrap : public ClapTrap
 {
 public:
-    // Constructors
+
     FragTrap();
     FragTrap(const std::string &name);
-    FragTrap(const FragTrap &other);  // Copy constructor
+    FragTrap(const FragTrap &other);
 
-    // Destructor
     ~FragTrap();
 
-    // Assignment operator
     FragTrap &operator=(const FragTrap &other);
 
     // FragTrap specific function
     void highFivesGuys(void);
 };
 
-#endif /* FRAGTRAP_HPP */
+#endif

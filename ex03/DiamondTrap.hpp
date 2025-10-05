@@ -7,7 +7,7 @@
 class DiamondTrap :public FragTrap , public ScavTrap
 {
 private:
-    // Data members
+    
     std::string _name;
 public:
     DiamondTrap(/* args */);
@@ -17,8 +17,8 @@ public:
     void whoAmI();
     ~DiamondTrap();
      void setName(const std::string &name);
-     const std::string &getName() const;
+    const std::string &getName() const;
 };
 
 
-#endif /* DIAMONDTRAP_HPP */
+#endif

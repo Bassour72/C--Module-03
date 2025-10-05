@@ -5,18 +5,20 @@ int main()
 {
     // Create a DiamondTrap with a custom name
     DiamondTrap dt("Diamondy");
-    dt.setName("ffffff");
+    std::cout <<"====> "<< dt.getName() << std::endl;
+
+    //dt.setName("ffffff");
     // Test its ability
-    dt.whoAmI();
+     dt.whoAmI();
 
-    // Test inherited attack method (comes from ScavTrap)
-    dt.attack("an enemy");
+    // // Test inherited attack method (comes from ScavTrap)
+    // dt.attack("an enemy");
 
-    // Test inherited FragTrap ability
-    dt.highFivesGuys();
+    // // Test inherited FragTrap ability
+    // dt.highFivesGuys();
 
-    // Test inherited ScavTrap ability
-    dt.guardGate();
+    // // Test inherited ScavTrap ability
+    // dt.guardGate();
 
     // Destruction will be shown automatically
     return 0;

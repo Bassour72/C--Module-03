@@ -46,7 +46,6 @@ void ScavTrap::attack(const std::string &target)
     setEnergyPoints(getEnergyPoints() - 1);
 }
 
-// Special ability
 void ScavTrap::guardGate()
 {
     std::cout << "ScavTrap " << getName() << " is now in Gate keeper mode!\n";

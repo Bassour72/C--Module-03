@@ -50,8 +50,5 @@ DiamondTrap::~DiamondTrap()
     std::cout << "DiamondTrap " << _name << " has been destroyed!\n";
 }
 
-// Getter & Setter
-const std::string &DiamondTrap::getName() const { 
-    std:: cout  << ClapTrap::getName() << std::endl;
-    return _name; }
+const std::string &DiamondTrap::getName() const { return _name; }
 void DiamondTrap::setName(const std::string &name) { _name = name; }

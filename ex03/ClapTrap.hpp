@@ -23,16 +23,15 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 
-    void setName(const std::string &name);
+    virtual void setName(const std::string &name);
     void setHitPoints(unsigned int hitPoints);
     void setEnergyPoints(unsigned int energyPoints);
     void setAttackDamage(unsigned int attackDamage);
 
-    const std::string &getName() const;
+    virtual const std::string &getName() const;
     unsigned int getHitPoints() const;
     unsigned int getEnergyPoints() const;
     unsigned int getAttackDamage() const;
-    //getClapTrapName()
 };
 
 #endif 

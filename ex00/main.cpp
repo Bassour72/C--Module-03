@@ -1,17 +1,7 @@
 #include "ClapTrap.hpp"
-/*
-The purpose of this exercise is to learn how to create a class
-where each object is independent (isolated) from other objects.
-Each object has its own separate place in memory.
-*/
 
 int main()
 {
-    // Alpha
-    // WALL-E
-    // R2-D2
-    // GLaDOS
-    // Optimus Prime
     ClapTrap robot1("CL4P-TP");
     ClapTrap robot2("FR4G-TP");
 

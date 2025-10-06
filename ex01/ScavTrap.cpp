@@ -48,11 +48,11 @@ void ScavTrap::attack(const std::string &target)
     setEnergyPoints(getEnergyPoints() - 1);
 }
 
-// Special ability 
+
 void ScavTrap::guardGate()
 {
     std::cout << "ScavTrap " << getName() << " is now in Gate keeper mode!\n";
 }
-//todo you remove these methos and use methos of base class
+
 void ScavTrap::setEnergy(unsigned int e) { setEnergyPoints(e); }
 unsigned int ScavTrap::getEnergy() const { return getEnergyPoints(); }

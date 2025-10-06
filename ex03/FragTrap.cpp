@@ -5,7 +5,6 @@ FragTrap::FragTrap() : ClapTrap()
     setHitPoints(100);
     setEnergyPoints(100);
     setAttackDamage(30);
-   // setName("Default");
     std::cout << "FragTrap " << getName() << " has been created!" << std::endl;
 }
 

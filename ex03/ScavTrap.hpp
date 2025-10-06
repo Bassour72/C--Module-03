@@ -21,7 +21,7 @@ public:
     void attack(const std::string &target);
     void guardGate();
     void setEnergy(unsigned int e);
-unsigned int getEnergy() const;
+    unsigned int getEnergy() const;
 };
 
 #endif

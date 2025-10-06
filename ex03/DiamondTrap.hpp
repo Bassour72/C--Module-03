@@ -16,7 +16,7 @@ public:
     DiamondTrap& operator=(const DiamondTrap& other);
     void whoAmI();
     ~DiamondTrap();
-     void setName(const std::string &name);
+    void setName(const std::string &name);
     const std::string &getName() const;
 };
 

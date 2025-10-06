@@ -36,8 +36,9 @@ FragTrap::~FragTrap()
     std::cout << "FragTrap " << getName() << " has been destroyed!" << std::endl;
 }
 
-// FragTrap specific function
+
 void FragTrap::highFivesGuys(void)
 {
     std::cout << "FragTrap " << getName() << " requests a positive high five! ✋" << std::endl;
 }
+

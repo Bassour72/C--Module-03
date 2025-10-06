@@ -15,8 +15,6 @@ public:
     ~FragTrap();
 
     FragTrap &operator=(const FragTrap &other);
-
-    // FragTrap specific function
     void highFivesGuys(void);
 };
 

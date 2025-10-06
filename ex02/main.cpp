@@ -34,6 +34,11 @@ int main()
     frag3.setName("FR4G-ASSIGN");
     frag3.attack("FinalTarget");
     frag3.highFivesGuys();
+    std::cout << "\n--- Testing dynamic polymorphism ---\n";
+
+    ClapTrap* basePtr = new FragTrap("DYN-FR4G");
+    basePtr->attack("DynamicTarget");
+    delete basePtr;
 
     std::cout << "\n--- End of program (destroying objects) ---\n";
     return 0;

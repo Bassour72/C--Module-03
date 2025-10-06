@@ -28,6 +28,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap& other)
 }
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 {
+    std::cout<<"asssment oppperator"<<std::endl;
     if (this != &other)
     {
         ClapTrap::operator=(other);
